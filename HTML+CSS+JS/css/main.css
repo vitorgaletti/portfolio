@@ -27,15 +27,19 @@
     height: 110px;
     float: left;
     margin-left: 60px;
-    background-color: #2ccb69;
+    background-color: #1497ff;
     border-radius: 0 0 37px 0;
   }
 
   .vg-logo img {
-    width: 46px;
-    height: 31px;
+    width: 59px;
+    height: 39px;
     display: block;
     margin: 55px auto 0;
+  }
+
+  .vg-menu {
+    display: none;
   }
 
 }
@@ -47,6 +51,47 @@
 }
 
 @media screen and (min-width: 992px) {
+  .vg-menu {
+    display: table;
+    float: left;
+    height: 110px; 
+    margin-left: 30px;
+  }
+  .vg-menu a {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #bcbcbc;
+    text-decoration: none;
+    text-transform: lowercase;
+    display: inline-block;
+    margin: 56px 20px 0 20px;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .vg-menu a:first-child {
+    margin-left: 0;
+  }
+
+  .vg-menu a:hover{
+    color: #1497ff;
+  }
+
+  .vg-menu a:before {
+    content: '';
+    width: 0;
+    height: 4px;
+    background-color: #1497ff;
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition: all 0.2s ease-out;
+  }
+
+  .vg-menu a:hover:before {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1200px) {

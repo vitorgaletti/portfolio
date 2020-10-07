@@ -63,9 +63,7 @@ p {
     transition: all 0.2s ease-out;
   }
 
-  .vg-btn-contact:hover {
-    background-position-y: -45px;
-  }
+
 
   .vg-contact-info {
     width: 245px;
@@ -75,6 +73,7 @@ p {
     bottom: 115px;
     right: 65px;
     z-index: 200;
+    display: none;
   }
 
   .vg-contact-info-inner {
@@ -231,4 +230,14 @@ p {
 
 .vg-bg-black {
   background-color: #000;
+}
+
+/* CLASSES COMPORTAMENTAIS*/
+
+.vg-is-open {
+  display: block;
+}
+
+.vg-change-icon{
+  background-position-y: -45px;
 }

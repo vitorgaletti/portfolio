@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (min-width: 320px) {
@@ -27,7 +33,7 @@
     height: 110px;
     float: left;
     margin-left: 60px;
-    background-color: #1497ff;
+    background-color: #F57C00;
     border-radius: 0 0 37px 0;
   }
 
@@ -46,7 +52,7 @@
     width: 45px;
     height: 45px;
     display: block;
-    background-color: #1497ff;
+    background-color: #F57C00;
     background-image: url('../images/icon-contact-close.svg');
     background-repeat: no-repeat;
     position: fixed;
@@ -60,6 +66,70 @@
   .vg-btn-contact:hover {
     background-position-y: -45px;
   }
+
+  .vg-contact-info {
+    width: 245px;
+    height: 164px;
+    padding: 25px;
+    position: fixed;
+    bottom: 115px;
+    right: 65px;
+    z-index: 200;
+  }
+
+  .vg-contact-info-inner {
+    display: table;
+    width: 100%;
+    float: right;
+  }
+
+  .vg-contact-info-inner p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .vg-social-links {
+    width: 100%;
+    height: 45px;
+    display: block;
+    position: relative;
+    left: -5px;
+    margin-top: 7px;
+  }
+
+  .vg-social {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .vg-social > img {
+    width: 40px;
+    height: auto;
+    display: block;
+    margin: 3px auto 0;
+  }
+
+  .vg-corner {
+    width: 25px;
+    height: 25px;
+    display: block;
+    float: right;
+    display: relative;
+  }
+
+  .vg-corner:after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    bottom: -23px;
+    right: 0;
+    background: transparent url('../images/corner.svg') no-repeat;
+  }
+
 }
 
 @media screen and (min-width: 576px) {
@@ -92,14 +162,14 @@
   }
 
   .vg-menu a:hover{
-    color: #1497ff;
+    color: #F57C00;
   }
 
   .vg-menu a:before {
     content: '';
     width: 100%;
     height: 4px;
-    background-color: #1497ff;
+    background-color: #F57C00;
     display: block;
     position: absolute;
     bottom: -6px;
@@ -126,8 +196,13 @@
 
 /* CLASSES UTILITARIAS */
 
-.vg-text-green {
-  color: #1497ff;
+.vg-title {
+  font-family: 'Abril Fatface', serif;
+  font-weight: normal;
+}
+
+.vg-text-orange {
+  color: #F57C00;
 }
 
 .vg-text-dark {
@@ -142,8 +217,8 @@
   color: #000;
 }
 
-.vg-bg-green {
-  background-color: #1497ff;
+.vg-bg-orange {
+  background-color: #F57C00;
 }
 
 .vg-bg-dark {

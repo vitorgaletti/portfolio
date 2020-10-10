@@ -6,14 +6,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
 p {
   font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (min-width: 320px) {
-  #p-preloader {
-    
-  }
   
   .vg-page-wrapper, .vg-preloader {
       width: 100%;
@@ -303,4 +306,8 @@ p {
 
 .vg-change-icon{
   background-position-y: -45px;
+}
+
+.vg-fade-out {
+  animation: fadeOut 3s infinite ease-out;
 }

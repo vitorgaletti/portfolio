@@ -6,14 +6,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
 @keyframes fadeOut {
   to {
     opacity: 0;
   }
-}
-
-p {
-  font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (min-width: 320px) {
@@ -21,6 +21,7 @@ p {
   .vg-page-wrapper, .vg-preloader {
       width: 100%;
       height: 100vh;
+      display: table;
       background-color: #1c1c1c;
       border: 30px solid #000;
   }
@@ -155,6 +156,20 @@ p {
     background: transparent url('../images/corner.svg') no-repeat;
   }
 
+  /*---HOME---*/
+
+  .vg-display-text {
+    margin-top: 10%;
+  }
+
+  #vg-home-presentation {
+    background-image: url('../images/vitor-galeti-home.png');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+      
+  }
+
 }
 
 @media screen and (min-width: 576px) {
@@ -224,6 +239,10 @@ p {
 .vg-title {
   font-family: 'Abril Fatface', serif;
   font-weight: normal;
+}
+
+.vg-title-big{
+  font-size: 120px;
 }
 
 .vg-text-orange {
@@ -296,6 +315,14 @@ p {
 
 .jl-pad-left-15 {
   padding-left: 15px;
+}
+
+.vg-full-height {
+  height: 100vh;
+}
+
+.vg-first-section {
+  height: calc(100vh - 30px);
 }
 
 /* CLASSES COMPORTAMENTAIS*/

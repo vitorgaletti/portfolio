@@ -166,7 +166,7 @@ p {
     display: block;
     position: relative;
     left: -5px;
-    margin-top: 7px;
+    margin-top: 20px;
   }
 
   .vg-social {
@@ -213,6 +213,7 @@ p {
     background-size: 200px;
     background-repeat: no-repeat;
     background-position: 49% 29%; 
+    position: relative;
   }
 
   .vg-scroll-down {
@@ -266,7 +267,7 @@ p {
     transform-origin: top center;
   }
 
-  /* INFO */
+  /* HOME - INFO */
 
   .vg-more-info{
     text-decoration: none;
@@ -306,6 +307,141 @@ p {
     background-color: #F57C00;
     transition: all 1.6 ease-out;
   }
+
+
+   /*---HOME - PORTFOLIO ---*/
+
+   .vg-portfolio-navigator {
+     width: 145px;
+     height: 400px;
+     display: table;
+     position: absolute;
+     left: 15px;
+     top: 10vh;
+     
+   }
+
+   .vg-navigator-counter {
+     width: 100%;
+     height: 90px;
+     display: block;
+     margin-bottom: 60px;
+     position: relative;
+   }
+
+   .vg-navigator-counter:before {
+     content: '';
+     display: block;
+     width: 35px;
+     height: 100%;
+     background-color: #1C1C1C;
+     position: absolute;
+     top: 3px;
+     left: 0;
+   }
+
+   .vg-navigator-counter span {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 120px;
+     line-height: 90px;
+     font-weight: 600;
+   }
+
+   .vg-item-navigator {
+     width: 100%;
+     display: table;
+   }
+
+   .vg-item-navigator a {
+     width: 20px;
+     height: 1px;
+     display: block;
+     margin: 0 0 80px 35px;
+     background-color: #4D4C4C;
+   }
+
+   .vg-item-navigator a.vg-item-active {
+     background-color: #F57C00;
+   }
+
+   .vg-item-navigator a:last-child {
+     margin-bottom: 30px;
+   }
+
+   .vg-items-next-prev {
+     width: 100%;
+     height: 45px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #2C2C2C;
+     border-radius: 23px;
+   }
+
+   .vg-items-next-prev > div {
+     height: 32px;
+   }
+
+   .vg-items-counter {
+     font-family: 'Open Sans', sans-serif;
+     color: #4D4C4C;
+     line-height: 32px;
+   }
+
+   .vg-item-prev, .vg-item-next {
+     width: 45px;
+     color: #F57C00;
+     text-align: center;
+     cursor: pointer;
+   }
+
+   .vg-items-counter span:nth-child(1) {
+     color: #BCBCBC;
+   }
+
+   ion-icon {
+     font-size: 32px;
+   }
+
+   .vg-slider-container {
+     display: block;
+     overflow: hidden;
+   }
+
+   .vg-slider-list {
+     width: auto;
+     height: 700px;
+     display: block;
+     list-style: none;
+   }
+
+   .vg-slider-item {
+     display: block;
+     height: 500px;
+     float: left;
+     margin-top: calc(10vh - 75px);
+   }
+
+   .vg-portfolio-item-info {
+     width: 100%;
+     display: table;
+     margin-top: 73px;
+   }
+
+   .vg-portfolio-item-thumb {
+     width: 100%;
+     background-color: #2C2C2C;
+     display: table;
+     padding: 75px 0;
+   }
+
+   .vg-portfolio-item-thumb img {
+     width: 100%;
+     max-width: 100%;
+     height: auto;
+     position: relative;
+     left: -75px;
+   }
 }
 
 @media screen and (min-width: 576px) {
@@ -435,7 +571,11 @@ p {
   font-size: 26px;
 }
 
-.vg-title-big{
+.vg-title-large {
+  font-size: 64px;
+}
+
+.vg-title-xlarge{
   font-size: 120px;
 }
 
@@ -515,12 +655,57 @@ p {
   padding-left: 15px;
 }
 
+.vg-mar-30 {
+  margin: 30px;
+}
+
+.vg-mar-top-30 {
+  margin-top: 30px;
+}
+
+.vg-mar-right-30 {
+  margin-right: 30px;
+}
+
+.vg-mar-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.vg-mar-left-30 {
+  margin-left: 30px;
+}
+
+.vg-pad-30 {
+  padding: 30px;
+}
+
+.vg-pad-top-30 {
+  padding-top: 30px;
+}
+
+.vg-pad-right-30 {
+  padding-right: 30px;
+}
+
+.vg-pad-bottom-30 {
+  padding-bottom: 30px;
+}
+
+.vg-pad-left-30 {
+  padding-left: 30px;
+}
+
 .vg-full-height {
   height: 100vh;
+  position: relative;
 }
 
 .vg-first-section {
   height: calc(100vh - 30px);
+}
+
+.vg-no-padding {
+  padding: 0 !important;
 }
 
 /* CLASSES COMPORTAMENTAIS*/
@@ -534,7 +719,36 @@ p {
 }
 
 .vg-fade-out {
-  animation: fadeOut 2s ease-out 1s infinite ;
+  animation: fadeOut 2s ease-out 1s forwards ;
+}
+
+.vg-no-radius-left {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.vg-no-radius-right {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.blue {
+  background-color: blue;
+}

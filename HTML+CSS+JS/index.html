@@ -30,8 +30,8 @@
 
         <nav class="vg-menu">
             <a href="#">Home</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contato</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Sobre</a>
         </nav>
 
     </header>
@@ -40,17 +40,21 @@
         <div class="vg-contact-info-inner">
             <h2 class="vg-title vg-text-orange">Contato</h2>
             <p>vitor.fgaletti@gmail.com</p>
-            <p>+55 (44) 9 8454-4096</p>
-
+        
             <div class="vg-social-links">
-                <a href="#" class="vg-social">
+
+              <a href="https://github.com/vitorgaletti" class="vg-social" title="Github" target="_blank">
                     <img src="images/icon-github.svg" alt="Github">
                 </a>
-                <a href="#" class="vg-social">
+                <a href="https://www.linkedin.com/in/vitorgaleti/" class="vg-social" title="Linkedin" target="_blank" >
                     <img src="images/icon-linkedin.svg" alt="Linkedin">
                 </a>
                 <a href="#" class="vg-social">
                     <img src="images/icon-twitter.svg" alt="Twitter">
+                </a>
+
+                <a href="https://wa.me/5544984544096" class="vg-social" title="WhatsApp" target="_blank">
+                    <img src="images/icon-whatsapp.svg" alt="WhatsApp">
                 </a>
             </div>
         </div>
@@ -71,13 +75,14 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-3 offset-md-2 vg-display-text">
 
-                        <h1 class="vg-title vg-text-orange vg-title-big">Olá!</h1>
+                        <h1 class="vg-title vg-text-orange vg-title-xlarge">Olá!</h1>
 
                         <p class="vg-text-light vg-text-medium">Meu nome é <span class="vg-text-orange">Vitor
                                 Galeti</span>, sou
                             desenvolvedor web e apaixadonado por cyber security.</p>
 
-                        <button class="vg-btn vg-btn-large vg-btn-orange vg-mar-top-15" onclick="window.location.href='#vg-home-info'">mais informações</button>
+                        <button class="vg-btn vg-btn-large vg-btn-orange vg-mar-top-15"
+                            onclick="window.location.href='#vg-home-info'">mais informações</button>
                     </div>
                 </div>
             </div>
@@ -90,7 +95,7 @@
         </section>
 
         <section class="vg-full-height" id="vg-home-info">
-            <div class="container">
+            <div class="container vg-no-padding">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 vg-display-text">
                         <div class="vg-info-content">
@@ -107,22 +112,25 @@
                                 <div class="vg-more-info vg-text-light vg-text-medium vg-mar-top-15">
                                     <ul>
                                         <li>
+                                            <ion-icon name="mail-outline" size="small"></ion-icon>
                                             <a href="mailto:vitor.fgaletti@gmail.com" class="vg-more-info"> <span
                                                     class="vg-text-orange">Email:</span>
                                                 vitor.fgaletti@gmail.com</a>
                                         </li>
                                         <li>
+                                            <ion-icon name="call-outline" size="small"></ion-icon>
                                             <a href="https://wa.me/5544984544096" target="_blank" class="vg-more-info">
                                                 <span class="vg-text-orange">Celular:</span> +55 (44) 9 8454-4096</a>
                                         </li>
                                         <li>
+                                            <ion-icon name="location-outline" size="small"></ion-icon>
                                             <a href="https://goo.gl/maps/wjv4vjtCwi2t9Apb6" target="_blank"
                                                 class="vg-more-info"> <span class="vg-text-orange">Local:</span>
                                                 Umuarama, PR</a>
                                         </li>
                                         <li>
-                                            <a class="vg-more-info"><span class="vg-text-orange">Nascimento:</span> 1 de
-                                                Dezembro 1997</a>
+                                            <ion-icon name="calendar-outline" size="small"></ion-icon>
+                                            <span class="vg-more-info"><span class="vg-text-orange">Nascimento:</span>1 de Dezembro 1997</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -200,9 +208,92 @@
             </div>
 
         </section>
+
+        <section class="vg-full-height" id="vg-home-portfolio">
+            <div class="container-fluid vg-no-padding">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="vg-portfolio-navigator">
+                            <div class="vg-navigator-counter">
+                                <span class="vg-text-orange">01</span>
+                            </div>
+                            <nav class="vg-item-navigator">
+                                <a href="#" class="vg-item-active" data-nav="1"></a>
+                                <a href="#" data-nav="2"></a>
+                                <a href="#" data-nav="3"></a>
+                                <a href="#" data-nav="4"></a>
+                                <a href="#" data-nav="5"></a>
+                            </nav>
+                            <div class="vg-items-next-prev vg-no-radius-left">
+                                <div class="vg-item-prev">
+                                    <ion-icon name="caret-back-outline"></ion-icon>
+                                </div>
+                                <div class="vg-items-counter">
+                                    <span class="vg-current-slide">01</span>
+                                    /
+                                    <span class="vg-total-slide">05</span>
+                                </div>
+
+                                <div class="vg-item-next">
+                                    <ion-icon name="caret-forward-outline"></ion-icon>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-10">
+                        <div class="vg-slider-container vg-full-height">
+                            <ul class="vg-slider-list vg-full-height">
+                                <li class="vg-slider-item">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="vg-portfolio-item-info vg-text-light">
+                                                <h1 class="vg-title vg-title-large vg-mar-bottom-15">Startup Rocketz Website</h1>
+                                                <p class="vg-mar-bottom-30">UX, UI e WordPress para aceleradora de startups.</p>
+                                                <button class="vg-btn vg-btn-large vg-btn-orange">ver projetos</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="vg-portfolio-item-thumb">
+                                                <img src="images/thumb-1.jpg" alt="Startup Rocketz" title="Startup Rocketz" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+
+                                <li class="vg-slider-item">
+                                    
+                                </li>
+
+                                <li class="vg-slider-item">
+                                    
+                                </li>
+
+                                <li class="vg-slider-item">
+                                    
+                                </li>
+
+                                <li class="vg-slider-item">
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </div>
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
 </body>
 

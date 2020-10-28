@@ -15,7 +15,7 @@ window.addEventListener('load', function () {
 });
 
 //Abrindo e Fechando Informações de Contato
-btnContact.addEventListener('click', function(){
+btnContact.addEventListener('click', function () {
     var boxContact = document.querySelector('.vg-contact-info');
     boxContact.classList.toggle('vg-is-open');
     this.classList.toggle('vg-change-icon');
@@ -30,5 +30,6 @@ var waypoint = new Waypoint({
     },
     offset: '80%'
 });
+
 
 

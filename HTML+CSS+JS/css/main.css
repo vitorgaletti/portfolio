@@ -286,47 +286,6 @@ p {
     transform-origin: top center;
   }
 
-  /* HOME - INFO */
-
-  .vg-more-info {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .vg-more-info li {
-    list-style-type: none;
-  }
-
-  .vg-skills-section {
-    padding-left: 10%;
-  }
-
-  .vg-progress-bar-text {
-    display: inline-block;
-    margin-bottom: 6px;
-    font-weight: 600;
-    line-height: 26px;
-  }
-
-  .vg-progress-cont {
-    display: table;
-    float: right;
-    margin-right: 10px;
-  }
-
-  .vg-progress-bar-skills,
-  .vg-progress-bar-line {
-    position: relative;
-    width: 100%;
-    background-color: #4d4c4c;
-    border-radius: 12px;
-  }
-
-  .vg-progress-bar-line {
-    height: 6px;
-    background-color: #f57c00;
-    transition: all 1.6 ease-out;
-  }
 
   /*---HOME - PORTFOLIO ---*/
 
@@ -336,7 +295,7 @@ p {
     display: table;
     position: absolute;
     left: 15px;
-    top: 10vh;
+    top: 26vh;
   }
 
   .vg-navigator-counter {
@@ -438,7 +397,7 @@ p {
     display: block;
     height: 500px;
     float: left;
-    margin-top: calc(10vh - 75px);
+    margin-top: calc(26vh - 75px);
   }
 
   .vg-portfolio-list .vg-portfolio-item {
@@ -515,6 +474,52 @@ p {
     position: relative;
     left: -75px;
   }
+
+    /*---SOBRE-----*/
+
+    .vg-sobre-info {
+      list-style: none;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    .vg-sobre-info a {
+      text-decoration: none;
+      color: inherit;
+    }
+  
+    .vg-skills-section {
+      padding-left: 10%;
+    }
+  
+    .vg-progress-bar-text {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      line-height: 26px;
+    }
+  
+    .vg-progress-cont {
+      display: table;
+      float: right;
+      margin-right: 10px;
+    }
+  
+    .vg-progress-bar-skills,
+    .vg-progress-bar-line {
+      position: relative;
+      width: 100%;
+      background-color: #4d4c4c;
+      border-radius: 12px;
+    }
+  
+    .vg-progress-bar-line {
+      height: 6px;
+      background-color: #f57c00;
+      transition: all 1.6 ease-out;
+    }
+  
 
   /*---------PORTFOLIO---------*/
 
@@ -682,6 +687,15 @@ p {
   font-weight: normal;
 }
 
+.vg-subtitle {
+  font-family: 'Open Sans', serif;
+  font-weight: 800;
+}
+
+.vg-subtitle-small {
+  font-size: 22px;
+}
+
 .vg-title-small {
   font-size: 26px;
 }
@@ -821,6 +835,30 @@ p {
 
 .vg-no-padding {
   padding: 0 !important;
+}
+
+.vg-page-list {
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.vg-page-list > li {
+  font-size: 16px;
+  line-height: 28px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.vg-page-list > li:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  background-color: #F57C00;
 }
 
 /* CLASSES COMPORTAMENTAIS*/

@@ -4,7 +4,7 @@
 
 var sliderContainer = document.querySelector('.vg-slider-container');
 var sliderList = document.querySelector('.vg-slider-list');
-var sliderItem = document.querySelectorAll('.vg-slider-item');
+var sliderItem = document.querySelectorAll('.vg-portfolio-item');
 var sliderListWidth = null;
 const sliderTotalItems = sliderItem.length;
 var prevItem = document.querySelector('.vg-item-prev');

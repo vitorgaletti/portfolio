@@ -286,7 +286,6 @@ p {
     transform-origin: top center;
   }
 
-
   /*---HOME - PORTFOLIO ---*/
 
   .vg-portfolio-navigator {
@@ -475,52 +474,6 @@ p {
     left: -75px;
   }
 
-    /*---SOBRE-----*/
-
-    .vg-sobre-info {
-      list-style: none;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 16px;
-      line-height: 28px;
-    }
-
-    .vg-sobre-info a {
-      text-decoration: none;
-      color: inherit;
-    }
-  
-    .vg-skills-section {
-      padding-left: 10%;
-    }
-  
-    .vg-progress-bar-text {
-      display: inline-block;
-      margin-bottom: 6px;
-      font-weight: 600;
-      line-height: 26px;
-    }
-  
-    .vg-progress-cont {
-      display: table;
-      float: right;
-      margin-right: 10px;
-    }
-  
-    .vg-progress-bar-skills,
-    .vg-progress-bar-line {
-      position: relative;
-      width: 100%;
-      background-color: #4d4c4c;
-      border-radius: 12px;
-    }
-  
-    .vg-progress-bar-line {
-      height: 6px;
-      background-color: #f57c00;
-      transition: all 1.6 ease-out;
-    }
-  
-
   /*---------PORTFOLIO---------*/
 
   .vg-section-offset-top {
@@ -532,11 +485,16 @@ p {
     margin-top: 70px;
   }
 
-  .vg-portfolio-list .vg-portfolio-item:nth-child(odd) .vg-portfolio-item-info button {
+  .vg-portfolio-list
+    .vg-portfolio-item:nth-child(odd)
+    .vg-portfolio-item-info
+    button {
     float: right;
   }
-  
-  .vg-portfolio-list .vg-portfolio-item:nth-child(even) .vg-portfolio-item-info {
+
+  .vg-portfolio-list
+    .vg-portfolio-item:nth-child(even)
+    .vg-portfolio-item-info {
     margin-left: 105px;
   }
 
@@ -544,13 +502,75 @@ p {
     flex-direction: row-reverse;
   }
 
-  .vg-portfolio-list .vg-portfolio-item:nth-child(even) .vg-portfolio-item-thumb button{
+  .vg-portfolio-list
+    .vg-portfolio-item:nth-child(even)
+    .vg-portfolio-item-thumb
+    button {
     float: left;
     margin-left: 75px;
   }
 
-  .vg-portfolio-list .vg-portfolio-item:nth-child(even) .vg-portfolio-item-thumb img{
+  .vg-portfolio-list
+    .vg-portfolio-item:nth-child(even)
+    .vg-portfolio-item-thumb
+    img {
     left: 75px;
+  }
+
+  /*---SOBRE-----*/
+
+  .vg-sobre-info {
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .vg-sobre-info a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .vg-skills-section {
+    padding-left: 10%;
+  }
+
+  .vg-progress-bar-text {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+
+  .vg-progress-cont {
+    display: table;
+    float: right;
+    margin-right: 10px;
+  }
+
+  .vg-progress-bar-skills,
+  .vg-progress-bar-line {
+    position: relative;
+    width: 100%;
+    background-color: #4d4c4c;
+    border-radius: 12px;
+  }
+
+  .vg-progress-bar-line {
+    height: 6px;
+    background-color: #f57c00;
+    transition: all 1.6 ease-out;
+  }
+
+  /*---DETALHES-----*/
+
+  .vg-hero {
+    height: 500px;
+    background-image: url('../pages/portfolio/img/hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
   }
 }
 
@@ -688,7 +708,7 @@ p {
 }
 
 .vg-subtitle {
-  font-family: 'Open Sans', serif;
+  font-family: "Open Sans", serif;
   font-weight: 800;
 }
 
@@ -839,7 +859,7 @@ p {
 
 .vg-page-list {
   list-style: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .vg-page-list > li {
@@ -850,7 +870,7 @@ p {
 }
 
 .vg-page-list > li:before {
-  content: '';
+  content: "";
   width: 8px;
   height: 8px;
   display: block;
@@ -858,7 +878,7 @@ p {
   position: absolute;
   top: 7px;
   left: 0;
-  background-color: #F57C00;
+  background-color: #f57c00;
 }
 
 /* CLASSES COMPORTAMENTAIS*/

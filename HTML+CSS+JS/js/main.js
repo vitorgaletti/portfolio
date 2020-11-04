@@ -21,6 +21,10 @@ btnContact.addEventListener('click', function () {
     this.classList.toggle('vg-change-icon');
 });
 
+var postGallery = document.querySelector('.vg-post-gallery');
+var postGalleryHeight = postGallery.clientHeight;
+postGallery.style.height = (postGalleryHeight - 270) + 'px';
+
 //Animando Elementos on Scroll com Waypoints
 var myScrollDown = document.querySelector('.vg-scroll-down');
 var waypoint = new Waypoint({
@@ -30,6 +34,5 @@ var waypoint = new Waypoint({
     },
     offset: '80%'
 });
-
 
 

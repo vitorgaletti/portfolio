@@ -116,7 +116,7 @@ p {
     text-align: center;
   }
 
-  .vg-overlay {
+  .vg-menu-overlay {
     width: 100%;
     height: 100vh;
     display: none;
@@ -157,6 +157,55 @@ p {
 
   .vg-menu {
     display: none;
+  }
+
+  .vg-btn-menu-mob {
+    width: 54px;
+    height: 54px;
+    display: block;
+    border-radius: 50%;
+    border: none;
+    background-color: #F57C00;
+    color: #000;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    z-index: 1250;
+    cursor: pointer;
+  }
+
+  .vg-btn-menu-mob ion-icon {
+    vertical-align: middle;
+  }
+
+  .vg-menu-mob {
+    width: 240px;
+    height: 100vh;
+    display: block;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    padding: 100px 30px 30px;
+    z-index: 1200;
+    transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+  }
+
+  .vg-menu-is-open {
+    right: 0;
+  }
+
+  .vg-menu-is-closed {
+    right: -240px;
+  }
+
+  .vg-menu-mob a {
+    width: 100%;
+    height: 60px;
+    display: block;
+    line-height: 60px;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
   }
 
   .vg-btn-contact {
@@ -764,6 +813,10 @@ p {
 }
 
 @media screen and (min-width: 992px) {
+  .vg-menu-mob, .vg-btn-menu-mob {
+    display: none;
+  }
+
   .vg-menu {
     display: table;
     float: left;

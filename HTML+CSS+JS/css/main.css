@@ -127,7 +127,6 @@ p {
     background-color: rgba(245, 124, 0, 0.95);
   }
 
-
   .vg-topbar {
     width: 100%;
     height: 110px;
@@ -165,7 +164,7 @@ p {
     display: block;
     border-radius: 50%;
     border: none;
-    background-color: #F57C00;
+    background-color: #f57c00;
     color: #000;
     position: fixed;
     right: 30px;
@@ -187,7 +186,7 @@ p {
     top: 0;
     padding: 100px 30px 30px;
     z-index: 1200;
-    transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   .vg-menu-is-open {
@@ -203,8 +202,8 @@ p {
     height: 60px;
     display: block;
     line-height: 60px;
-    color: #FFF;
-    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
   }
 
@@ -295,12 +294,26 @@ p {
     margin-top: 10%;
   }
 
-  #vg-home-presentation {
+  .vg-home-presentation {
     background-image: url("../images/vitor-galeti-home.png");
-    background-size: 200px;
     background-repeat: no-repeat;
-    background-position: 49% 29%;
+    background-position: 50% bottom;
     position: relative;
+    background-size: 60% auto;
+  }
+
+  .vg-home-presentation h1 {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .vg-home-presentation p {
+    text-align: center;
+  }
+
+  .vg-home-presentation .vg-btn {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .vg-scroll-down {
@@ -633,7 +646,7 @@ p {
 
   .vg-hero {
     height: 500px;
-    background-image: url('../pages/portfolio/img/hero.png');
+    background-image: url("../pages/portfolio/img/hero.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -652,12 +665,12 @@ p {
     position: relative;
   }
 
-  .vg-hero-inner-content p{
+  .vg-hero-inner-content p {
     margin-bottom: 15px;
   }
 
   .vg-hero-inner-content:before {
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.85);
@@ -673,7 +686,7 @@ p {
     width: 100%;
     height: 100%;
     display: table;
-    border-right: 1px solid #F57C00;
+    border-right: 1px solid #f57c00;
   }
 
   .vg-post {
@@ -681,7 +694,7 @@ p {
     display: table;
   }
 
-  .vg-post p{
+  .vg-post p {
     margin-bottom: 30px;
   }
 
@@ -704,8 +717,7 @@ p {
     top: -270px;
   }
 
-
-  .vg-gallery-frame-container{
+  .vg-gallery-frame-container {
     width: 400px;
     display: none;
     position: fixed;
@@ -730,7 +742,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FFF;
+    background-color: #fff;
     position: absolute;
     top: 3%;
     left: 7%;
@@ -739,10 +751,10 @@ p {
 
   .vg-gallery-frame-inner .vg-skeleton-loading > div {
     width: 90%;
-    background-color: #DEDEDE;
+    background-color: #dedede;
     margin: 10% 0;
     border-radius: 8px;
-    background-image: url('../images/skeleton-loading-blur.svg');
+    background-image: url("../images/skeleton-loading-blur.svg");
     background-repeat: no-repeat;
     background-position: -100% -150px;
     animation: skeletonBlur 2s infinite ease-out;
@@ -753,7 +765,7 @@ p {
     height: 15%;
   }
 
-  .vg-gallery-frame-inner .vg-skeleton-loading > div:nth-child(2){
+  .vg-gallery-frame-inner .vg-skeleton-loading > div:nth-child(2) {
     height: 60%;
   }
 
@@ -776,7 +788,7 @@ p {
   }
 
   .vg-close-gallery ion-icon {
-    color: #F57C00;
+    color: #f57c00;
     width: 20px;
     height: 20px;
     text-align: center;
@@ -804,16 +816,31 @@ p {
     position: relative;
     top: 20px;
   }
+
+  /* Utilitarias */
+  .vg-title-xlarge {
+    font-size: 90px;
+  }
 }
 
 @media screen and (min-width: 576px) {
 }
 
+
+@media screen and (min-width: 700px) {
+  .vg-home-presentation {
+    background-size: 50% auto;
+  }
+}
+
+
 @media screen and (min-width: 768px) {
+
 }
 
 @media screen and (min-width: 992px) {
-  .vg-menu-mob, .vg-btn-menu-mob {
+  .vg-menu-mob,
+  .vg-btn-menu-mob {
     display: none;
   }
 
@@ -859,6 +886,29 @@ p {
 
   .vg-menu a:hover:before {
     transform: scale(1, 1);
+  }
+
+  .vg-title-xlarge {
+    font-size: 120px;
+  }
+
+  .vg-home-presentation {
+    background-position: 50% 29%;
+    background-size: 15% auto;
+    
+  }
+
+  .vg-home-presentation h1 {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .vg-home-presentation p {
+    text-align: left;
+  }
+
+  .vg-home-presentation .vg-btn {
+    margin-left: 0;
   }
 }
 
@@ -964,9 +1014,7 @@ p {
   font-size: 64px;
 }
 
-.vg-title-xlarge {
-  font-size: 120px;
-}
+
 
 .vg-text-medium {
   font-size: 18px;

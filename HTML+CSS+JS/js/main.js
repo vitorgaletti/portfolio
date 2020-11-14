@@ -43,10 +43,6 @@ for (var m = 0; m < toggleMenu.length; m++) {
 }
 
 
-var postGallery = document.querySelector('.vg-post-gallery');
-var postGalleryHeight = postGallery.clientHeight;
-postGallery.style.height = (postGalleryHeight - 270) + 'px';
-
 //Animando Elementos on Scroll com Waypoints
 var myScrollDown = document.querySelector('.vg-scroll-down');
 var waypoint = new Waypoint({

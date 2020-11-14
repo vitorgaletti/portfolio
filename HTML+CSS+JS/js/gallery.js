@@ -8,6 +8,9 @@ var btnPrev = document.querySelector('.vg-item-prev');
 var currCounter = document.querySelector('.vg-current-slide');
 var totalCounter = document.querySelector('.vg-total-slide');
 var skeletonLoading = document.querySelector('.vg-skeleton-loading');
+var postGallery = document.querySelector('.vg-post-gallery');
+var postGalleryHeight = postGallery.clientHeight;
+postGallery.style.height = (postGalleryHeight - 270) + 'px';
 
 //Counter Formater
 var counterFormatter = function (n) {

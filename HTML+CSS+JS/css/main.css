@@ -636,7 +636,7 @@ p {
   }
 
   .vg-skills-section {
-    padding-left: 10%;
+    padding-left: 15px;
   }
 
   .vg-progress-bar-text {
@@ -644,12 +644,6 @@ p {
     margin-bottom: 6px;
     font-weight: 600;
     line-height: 26px;
-  }
-
-  .vg-progress-cont {
-    display: table;
-    float: right;
-    margin-right: 10px;
   }
 
   .vg-progress-bar-skills,
@@ -889,6 +883,10 @@ p {
 
   .vg-text-center-mob {
     text-align: left;
+  }
+
+  .vg-skills-section {
+    padding-left: 10%;
   }
 }
 

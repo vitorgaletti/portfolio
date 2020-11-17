@@ -116,7 +116,7 @@ p {
     text-align: center;
   }
 
-  .vg-menu-overlay {
+  .vg-overlay, .vg-menu-overlay {
     width: 100%;
     height: 100vh;
     display: none;
@@ -669,7 +669,6 @@ p {
   /*---DETALHES-----*/
 
   .vg-hero {
-    height: 500px;
     background-image: url("../pages/portfolio/img/hero.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -682,35 +681,34 @@ p {
   }
 
   .vg-hero-inner {
-    height: 500px;
+    display: table;
+    padding: 65px 0;
   }
 
   .vg-hero-inner-content {
-    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: block;
+    padding: 15px 25px 15px;
   }
 
   .vg-hero-inner-content p {
     margin-bottom: 15px;
   }
 
-  .vg-hero-inner-content:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
-    display: block;
-    position: absolute;
-    left: -65px;
-    top: -65px;
-    box-sizing: content-box;
-    padding: 65px;
-  }
-
   .vg-project-stats {
     width: 100%;
     height: 100%;
     display: table;
-    border-right: 1px solid #f57c00;
+    border-right: none;
+  }
+
+  .vg-project-description {
+    width: 100%;
+    height: 100%;
+    display: table;
+    margin-top: 30px;
   }
 
   .vg-post {
@@ -742,7 +740,7 @@ p {
   }
 
   .vg-gallery-frame-container {
-    width: 400px;
+    width: 60%;
     display: none;
     position: fixed;
     top: 30px;
@@ -795,7 +793,7 @@ p {
 
   .vg-gallery-frame-container .vg-items-next-prev {
     width: 150px;
-    margin: 75px auto 0 auto;
+    margin: 45px auto 0 auto;
   }
 
   .vg-close-gallery {
@@ -836,9 +834,9 @@ p {
     margin: 0 auto;
     display: block;
     z-index: 1200;
-    border-radius: 30px;
+    border-radius: 22px;
     position: relative;
-    top: 20px;
+    top: 14px;
   }
 
   /* Utilitarias */
@@ -855,9 +853,23 @@ p {
     height: auto;
     position: relative;
   }
+
+  .vg-text-center-mob {
+    text-align: center;
+  }
 }
 
+@media screen and (min-width: 360px) {
+  .vg-gallery-frame-container {
+    width: 70%;
+  }
+}
+
+
 @media screen and (min-width: 576px) {
+  .vg-hero-inner-content {
+    padding: 55px 65px 65px;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -873,6 +885,10 @@ p {
 @media screen and (min-width: 768px) {
   .vg-title-large {
     font-size: 48px;
+  }
+
+  .vg-text-center-mob {
+    text-align: left;
   }
 }
 
@@ -1099,6 +1115,23 @@ p {
     margin: 0;
   }
 
+  .vg-project-stats {
+    border-right: 1px solid #f57c00;
+  }
+
+  .vg-project-description {
+    margin-top: 0;
+  }
+
+  .vg-gallery-frame-container {
+    width: 320px;
+  }
+
+  .vg-gallery-frame-image {
+    top: 17px;
+  }
+
+
   /* --- UTILITARIAS --- */
   .vg-full-height {
     height: 100vh;
@@ -1148,6 +1181,11 @@ p {
     left: -75px;
   }
 
+  .vg-gallery-frame-container {
+    width: 340px;
+  }
+
+
   .vg-navigator-counter span {
     font-size: 120px;
   }
@@ -1155,6 +1193,8 @@ p {
   .vg-navigator-counter:before {
     width: 35px;
   }
+
+  
 }
 
 @media screen and (min-width: 1330px) and (max-width: 1350px) {
@@ -1164,9 +1204,14 @@ p {
 }
 
 @media screen and (min-width: 1364px) {
+
 }
 
 @media screen and (min-width: 1600px) {
+  .vg-gallery-frame-container {
+    width: 400px;
+  }
+
 }
 
 /* BOTÕES */
@@ -1201,7 +1246,7 @@ p {
 .vg-btn-medium {
   height: 38px;
   line-height: 38px;
-  padding: 0 27px;
+  padding: 0 20px;
   border-radius: 19px;
   font-size: 14px;
 }

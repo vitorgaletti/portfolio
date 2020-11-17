@@ -1,6 +1,6 @@
 var overlay = document.querySelector('.vg-overlay');
-var frameImage = document.querySelector('.vg-gallery-frame-image');
 var frameContainer = document.querySelector('.vg-gallery-frame-container');
+var frameImage = document.querySelector('.vg-gallery-frame-image');
 var galleryImages = document.querySelectorAll('.vg-thumb-img');
 var closeGallery = document.querySelectorAll('.vg-toggle-gallery');
 var btnNext = document.querySelector('.vg-item-next');
@@ -8,6 +8,7 @@ var btnPrev = document.querySelector('.vg-item-prev');
 var currCounter = document.querySelector('.vg-current-slide');
 var totalCounter = document.querySelector('.vg-total-slide');
 var skeletonLoading = document.querySelector('.vg-skeleton-loading');
+
 var postGallery = document.querySelector('.vg-post-gallery');
 var postGalleryHeight = postGallery.clientHeight;
 postGallery.style.height = (postGalleryHeight - 270) + 'px';

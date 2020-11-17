@@ -2,7 +2,6 @@
 var btnContact = document.querySelector('.vg-btn-contact');
 var toggleMenu = document.querySelectorAll('.vg-toggle-menu');
 var menuMobile = document.querySelector('.vg-menu-mob');
-var overlay = document.querySelector('.vg-menu-overlay');
 var btnMenuMobIcon = document.querySelector('.vg-btn-menu-mob ion-icon');
 
 //Page Preloader
@@ -27,6 +26,7 @@ btnContact.addEventListener('click', function () {
 //Abrindo e Fechando o Menu Mobile
 for (var m = 0; m < toggleMenu.length; m++) {
     toggleMenu[m].addEventListener('click', function () {
+        var overlay = document.querySelector('.vg-menu-overlay');
         overlay.classList.toggle('vg-is-open');
         menuMobile.classList.toggle('vg-menu-is-closed');
         menuMobile.classList.toggle('vg-menu-is-open');

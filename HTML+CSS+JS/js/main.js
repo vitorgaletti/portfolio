@@ -43,14 +43,6 @@ for (var m = 0; m < toggleMenu.length; m++) {
 }
 
 
-//Animando Elementos on Scroll com Waypoints
-var myScrollDown = document.querySelector('.vg-scroll-down');
-var waypoint = new Waypoint({
-    element: myScrollDown,
-    handler: function () {
-        myScrollDown.classList.toggle('vg-fade-out');
-    },
-    offset: '80%'
-});
+
 
 

@@ -42,7 +42,19 @@ for (var m = 0; m < toggleMenu.length; m++) {
 
 }
 
-
+//Animando Elementos da TopBar
+var triggerTopbar = document.querySelector('.vg-trigger-topbar');
+var topBar = document.querySelector('.vg-topbar');
+var logo = document.querySelector('.vg-logo');
+var waypoint = new Waypoint({
+    element: triggerTopbar,
+    handler: function () {
+       topBar.classList.toggle('vg-topbar-bg');
+       logo.classList.toggle('vg-logo-shorten');
+       logo.classList.toggle('vg-logo-big');
+    },
+    offset: '50px'
+});
 
 
 

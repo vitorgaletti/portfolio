@@ -1,7 +1,7 @@
 var overlay = document.querySelector('.vg-overlay');
 var frameContainer = document.querySelector('.vg-gallery-frame-container');
 var frameImage = document.querySelector('.vg-gallery-frame-image');
-var galleryImages = document.querySelectorAll('.vg-thumb-img');
+var galleryImages = document.querySelectorAll('.vg-thumb-box');
 var closeGallery = document.querySelectorAll('.vg-toggle-gallery');
 var btnNext = document.querySelector('.vg-item-next');
 var btnPrev = document.querySelector('.vg-item-prev');
@@ -43,8 +43,8 @@ const skeletonAnim = function (imagem) {
 const getImageSrc = function () {
     for (var i = 0; i < galleryImages.length; i++) {
         galleryImages[i].addEventListener('click', function () {
-            var imageSrc = this.getAttribute('data-src');
-            var itemNum = this.getAttribute('data-item');
+            var imageSrc = this.querySelector('img').getAttribute('data-src');
+            var itemNum = this.querySelector('img').getAttribute('data-item');
 
             skeletonLoading.style.display = 'flex';
 
@@ -79,7 +79,7 @@ const nextItem = function () {
 
     //Fazemos o loop e identificamos qual item faz match com o numero do proximo item
     for (var n = 0; n < galleryImages.length; n++) {
-        var item = galleryImages[n];
+        var item = galleryImages[n].querySelector('img');
         var itemNum = parseInt(item.getAttribute('data-item'));
 
         if (itemNum === nextItemNum) {
@@ -113,7 +113,7 @@ const prevItem = function () {
 
     //Fazemos o loop e identificamos qual item faz match com o numero do proximo item
     for (var p = 0; p < galleryImages.length; p++) {
-        var item = galleryImages[p];
+        var item = galleryImages[p].querySelector('img');
         var itemNum = parseInt(item.getAttribute('data-item'));
 
         if (itemNum === prevItemNum) {

@@ -448,7 +448,7 @@ p {
 
   .vg-scroll-down {
     width: 70px;
-    height: 105px;
+    height: 135px;
     border-radius: 35px 35px 0 0;
     background-color: #f57c00;
     display: block;
@@ -630,7 +630,7 @@ p {
     text-align: center;
   }
 
-  .vg-slider-list .vg-portfolio-item-info button {
+  .vg-slider-list .vg-portfolio-item-info .vg-btn {
     margin: 0 auto;
   }
 
@@ -652,12 +652,12 @@ p {
     position: relative;
   }
 
-  .vg-slider-list .vg-portfolio-item-thumb > button {
+  .vg-slider-list .vg-portfolio-item-thumb > .vg-btn {
     margin: 17px 30px 0 0;
     float: right;
   }
 
-  .vg-portfolio-list .vg-portfolio-item-thumb > button {
+  .vg-portfolio-list .vg-portfolio-item-thumb > .vg-btn  {
     margin: 17px auto 0 auto;
     float: none;
   }
@@ -713,11 +713,11 @@ p {
   .vg-portfolio-list
     .vg-portfolio-item:nth-child(odd)
     .vg-portfolio-item-info
-    button,
+    .vg-btn ,
   .vg-portfolio-list
     .vg-portfolio-item:nth-child(even)
     .vg-portfolio-item-info
-    button {
+    .vg-btn {
     float: none;
     margin: 0 auto;
   }
@@ -1151,7 +1151,7 @@ p {
     left: -75px;
   }
 
-  .vg-slider-list .vg-portfolio-item-thumb > button {
+  .vg-slider-list .vg-portfolio-item-thumb > .vg-btn  {
     margin: 17px 6.5% 0 0;
     float: right;
   }
@@ -1168,7 +1168,7 @@ p {
   .vg-portfolio-list
     .vg-portfolio-item:nth-child(odd)
     .vg-portfolio-item-info
-    button {
+    .vg-btn  {
     float: right;
   }
 
@@ -1186,7 +1186,7 @@ p {
   .vg-portfolio-list
     .vg-portfolio-item:nth-child(even)
     .vg-portfolio-item-info
-    button {
+    .vg-btn  {
     float: left;
   }
 
@@ -1233,7 +1233,7 @@ p {
   .vg-portfolio-list
     .vg-portfolio-item:nth-child(even)
     .vg-portfolio-item-thumb
-    button {
+    .vg-btn  {
     float: left;
     margin-left: 75px;
   }
@@ -1241,7 +1241,7 @@ p {
   .vg-portfolio-list
     .vg-portfolio-item:nth-child(odd)
     .vg-portfolio-item-thumb
-    button {
+    .vg-btn  {
     float: right;
     margin-right: 75px;
   }
@@ -1276,7 +1276,7 @@ p {
     margin-top: 73px;
   }
 
-  .vg-slider-list .vg-portfolio-item-info button {
+  .vg-slider-list .vg-portfolio-item-info .vg-btn  {
     margin: 0;
   }
 
@@ -1343,7 +1343,7 @@ p {
     max-width: 100%;
   }
 
-  .vg-slider-list .vg-portfolio-item-thumb > button {
+  .vg-slider-list .vg-portfolio-item-thumb > .vg-btn  {
     margin-right: 75px;
   }
 
